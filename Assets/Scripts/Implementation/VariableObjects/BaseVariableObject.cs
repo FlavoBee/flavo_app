@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Flavo
 {
-    public class BaseVariableObject<T> : MonoBehaviour, IVariableObject<T>
+    public class BaseVariableObject<T> : ScriptableObject, IVariableObject<T>
     {
         public event Action<T> OnValueChanged;
 
