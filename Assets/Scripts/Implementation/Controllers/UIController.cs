@@ -4,7 +4,9 @@ namespace Flavo
 {
     public class UIController : BaseController
     {
+        public ICanvasReferences CanvasReferences => _canvasReferences;
+
         [SerializeField]
-        private GameObject _homeView;
+        private CanvasReferences _canvasReferences;
     }
 }
